@@ -1,0 +1,133 @@
+[
+  {
+    "title": "Virtual Bookshelf: Organize, Track & Explore Books",
+    "id": "virtual-bookshelf-1",
+    "description": "Organize, track, review, and discover books within an interactive community-driven system.",
+    "images": ["https://i.ibb.co/rGwnb20P/image.png","https://i.ibb.co/7dTdBnsT/image.png","https://i.ibb.co/3mBDYWmC/image.png","https://i.ibb.co/Kpp91NMY/image.png"],
+    "badge": ["React", "Express.js", "MongoDB", "Tailwind CSS", "Firebase"],
+    "details": {
+      "about": "Virtual Bookshelf is a platform to organize, track, review, and discover books within an interactive community-driven system.",
+      "features": "Virtual Bookshelf allows users to manage their personal book collection by adding, editing, and deleting books. Readers can write one review per book and track their reading progress. A voting system lets users upvote books except their own. The profile page offers a visual pie chart showing book distribution by category. Users can search for books by title or author and filter by reading status and category. The app has protected routes, Firebase authentication (email/password and Google), and a fully responsive design with smooth animations powered by Framer Motion.",
+      "improvement": "Enhance search functionality, add reading goals, and introduce book recommendations based on user interests.",
+      "challenges": "Integrating Firebase Auth with private routes and managing review uniqueness per user required careful backend validation and state handling.",
+      "packages": [
+        "@headlessui/react",
+        "@lottiefiles/dotlottie-react",
+        "@tailwindcss/vite",
+        "axios",
+        "dotenv",
+        "firebase",
+        "lottie-react",
+        "motion",
+        "react",
+        "react-awesome-reveal",
+        "react-dom",
+        "react-helmet",
+        "react-icons",
+        "react-router",
+        "react-tabs",
+        "recharts",
+        "sweetalert2",
+        "tailwindcss",
+        "@eslint/js",
+        "@types/react",
+        "@types/react-dom",
+        "@vitejs/plugin-react",
+        "daisyui",
+        "eslint",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "globals",
+        "vite"
+      ]
+    },
+    "liveLink": "https://virtual-bookshelf-4f14f.web.app/",
+    "repoLink": "https://github.com/web-hasib/Assignment-11-client",
+    "bestFeatures": [
+      "Comprehensive Book Management (CRUD)",
+      "User Reviews & Upvoting System",
+      "Interactive Reading Progress Tracker"
+    ],
+    "creationDate": "2024-03-15"
+  },
+  {
+    "title": "Recipe Book: Manage & Share Culinary Creations",
+    "id": "recipe-book-2",
+    "description": "Manage, share, and explore recipes with user authentication and interactive features.",
+    "images": ["https://i.ibb.co/zTR9FDwm/image.png","https://i.ibb.co/60NW814W/image.png","https://i.ibb.co/rRsFMVrR/image.png","https://i.ibb.co/k6Vy7YRL/image.png"],
+    "badge": ["React", "Tailwind CSS", "Firebase", "RESTful API"],
+    "details": {
+      "about": "Recipe Book is a responsive web app for managing, sharing, and exploring recipes with user authentication and interactive features.",
+      "features": "Recipe Book offers full recipe CRUD operations with Firebase-based authentication for secure access. Users can add, edit, like, and delete their recipes, with real-time like updates. The platform supports protected routes to ensure data privacy and offers light/dark theme toggling with persistent settings. Users can search and filter recipes by cuisine type for easy discovery. Enhanced user experience is provided through animations like typewriter effects, Lottie animations, and reveal transitions. The application is fully responsive and built with modern UI libraries like DaisyUI, Mamba UI, and Zen UI for an attractive look and feel.",
+      "improvement": "Add user comments, improve search accuracy, and implement recipe recommendation based on user preferences.",
+      "challenges": "Handling real-time like updates and theme persistence across sessions required careful state management and local storage synchronization.",
+      "packages": [
+        "@lottiefiles/dotlottie-react",
+        "@tailwindcss/vite",
+        "@tanstack/react-query",
+        "dotenv",
+        "firebase",
+        "lottie-react",
+        "react",
+        "react-animated-heart",
+        "react-awesome-reveal",
+        "react-dom",
+        "react-helmet",
+        "react-icons",
+        "react-router",
+        "react-simple-typewriter",
+        "recharts",
+        "sweetalert2",
+        "swiper",
+        "tailwindcss",
+        "@eslint/js",
+        "@types/react",
+        "@types/react-dom",
+        "@vitejs/plugin-react",
+        "daisyui",
+        "eslint",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "globals",
+        "vite"
+      ]
+    },
+    "liveLink": "https://recipe-book-90965.web.app/",
+    "repoLink": "https://github.com/web-hasib/Assignment-10-client",
+    "bestFeatures": [
+      "Full Recipe CRUD Operations",
+      "Real-time Like System",
+      "Responsive Design with Modern UI"
+    ],
+    "creationDate": "2023-11-28"
+  },
+  {
+    "title": "AppStore: Discover & Review Apps",
+    "id": "app-store-3",
+    "description": "Discover, explore, and review apps across various categories with user authentication.",
+    "images": ["https://i.ibb.co/vC1mbBYy/image.png","https://i.ibb.co/B25bssgd/image.png","https://i.ibb.co/ZR3szHP6/image.png"],
+    "badge": ["React", "Firebase", "Tailwind CSS", "DaisyUI"],
+    "details": {
+      "about": "AppStore is a responsive platform to discover, explore, and review apps across Education, Gaming, and Productivity categories.",
+      "features": "AppStore allows users to browse, install, and review apps with secure Firebase Authentication. It supports user registration with validation rules, including strong password requirements. The app offers protected routes ensuring that app details and reviews are accessible only to authenticated users. Users can update their profile information, including name and profile picture. The UI is beautifully designed with Tailwind CSS, Zen UI, and Daisy UI for a smooth experience. Additional features include dynamic page titles with react-helmet, toast notifications with react-toastify, a 404 error page, and mobile-friendly responsive design for all devices.",
+      "improvement": "Integrate app rating system, enhance search filters, and add personalized app recommendations based on user behavior.",
+      "challenges": "Ensuring profile updates, form validation, and authentication security across protected routes required detailed attention and robust state management.",
+      "packages": [
+        "react-icons",
+        "react-helmet",
+        "react-router-dom",
+        "react-toastify",
+        "@zen-ui/react",
+        "daisyui"
+      ]
+    },
+    "liveLink": "https://app-store-d9019.web.app/",
+    "repoLink": "https://github.com/web-hasib/Assignment-9",
+    "bestFeatures": [
+      "Robust Firebase Authentication",
+      "Protected Routes for App Content",
+      "Fully Responsive & Attractive UI"
+    ],
+    "creationDate": "2024-01-07"
+  }
+]
