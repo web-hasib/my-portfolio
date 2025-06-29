@@ -1,12 +1,51 @@
-# React + Vite
+# 🌐 Hasibul Islam | Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!  
+This project showcases my skills, projects, and education, and provides easy ways to get in touch with me.
 
-Currently, two official plugins are available:
+## 🔗 Live Website
+[Visit My Portfolio](https://web-hasib.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
+- Smooth scrolling navigation
+- Responsive design (Mobile, Tablet, Desktop friendly)
+- Interactive hamburger menu for mobile view
+- About Me, Projects, Education, and Contact sections
+- Resume download button
+- Animated sections using modern UI libraries
+- Clean, modern design with Tailwind CSS & DaisyUI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+- **React** – Frontend framework
+- **Tailwind CSS** – Styling
+- **DaisyUI** – UI component library
+- **Framer Motion** – Animations
+- **React Scroll** – Smooth scrolling
+- **SweetAlert2** – Alert popups
+- **Netlify** – Deployment platform
+
+---
+
+## 🚀 Getting Started (For Local Setup)
+If you want to run this project locally, follow these steps:
+
+### Prerequisites
+- Node.js and npm installed on your machine.
+
+### Installation
+```bash
+# Clone the repository
+git clone https://github.com/web-hasib/your-repo-name.git
+
+# Navigate into the project directory
+cd your-repo-name
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
