@@ -115,7 +115,8 @@ const Hero = () => {
           </motion.div>
 
           {/* Animated Button */}
-     <a href="https://github.com/web-hasib" target="_blank">
+     <a href="/resume.pdf?download=1"
+     download='Hasibul`s resume' target="_blank">
 
             <Button className="mt-5" text="Resume"></Button>
      </a>

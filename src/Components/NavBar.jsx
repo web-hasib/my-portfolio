@@ -67,7 +67,8 @@ const NavBar = () => {
         </div>
         <div className="hidden lg:flex navbar-end items-center gap-2">
           {/* resume button  */}
-          <a href="https://github.com/web-hasib" target="_blank">
+          <a href="/resume.pdf?download=1"
+     download='Hasibul`s resume' target="_blank">
             <Button className="mt-5" text="Resume"></Button>
           </a>
         </div>
@@ -96,7 +97,8 @@ const NavBar = () => {
           >
             <div className="flex items-center justify-between mb-4">
               {/* resume button  */}
-              <a href="https://github.com/web-hasib" target="_blank">
+              <a href="/resume.pdf?download=1"
+     download='Hasibul`s resume' target="_blank">
                 <Button className="mt-5" text="Resume"></Button>
               </a>
             </div>
