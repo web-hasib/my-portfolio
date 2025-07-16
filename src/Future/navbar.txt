@@ -1,0 +1,170 @@
+import { NavLink } from "react-router";
+import Swal from "sweetalert2";
+import Logo from "./Logo";
+import Button from "./Shared/Button";
+import { Link } from "react-scroll";
+import { useEffect, useRef } from "react";
+
+const NavBar = () => {
+  const wrapperRef = useRef(null);
+
+  useEffect(() => {
+    // Add border style
+    const style = document.createElement("style");
+    style.innerHTML = `
+      .animated-border::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        padding: 2px;
+        background: conic-gradient(from var(--angle, 0deg), #ff00cc, #3333ff, #00ffcc, #ff00cc);
+        border-radius: 24px;
+        -webkit-mask:
+          linear-gradient(#fff 0 0) content-box,
+          linear-gradient(#fff 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        z-index: -1;
+      }
+    `;
+    document.head.appendChild(style);
+
+    // Animate --angle using JS
+    let angle = 0;
+    let rafId;
+
+    const animate = () => {
+      angle = (angle + 1) % 360;
+      if (wrapperRef.current) {
+        wrapperRef.current.style.setProperty("--angle", `${angle}deg`);
+      }
+      rafId = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => {
+      cancelAnimationFrame(rafId);
+      document.head.removeChild(style);
+    };
+  }, []);
+
+  const links = (
+    <>
+      <li>
+        <Link
+          to="about-me"
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className="cursor-pointer transition hover:text-pink-400"
+        >
+          About me
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="projects"
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className="cursor-pointer transition hover:text-pink-400"
+        >
+          Projects
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="education"
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className="cursor-pointer transition hover:text-pink-400"
+        >
+          Education
+        </Link>
+      </li>
+      <li>
+        <Link
+          to="contact"
+          smooth={true}
+          duration={500}
+          offset={-70}
+          className="cursor-pointer transition hover:text-pink-400"
+        >
+          Contact
+        </Link>
+      </li>
+    </>
+  );
+
+  return (
+    <div
+      ref={wrapperRef}
+      className="relative max-w-7xl mx-auto z-10 animated-border rounded-3xl"
+    >
+      <div className="relative bg-gradient-to-r from-blue-900/40 to-green-950/30 rounded-3xl shadow-sm">
+        <div className="navbar px-6 py-4">
+          <div className="navbar-start">
+            <Logo />
+          </div>
+          <div className="navbar-center hidden lg:flex">
+            <ul className="menu menu-horizontal px-1">{links}</ul>
+          </div>
+          <div className="hidden lg:flex navbar-end items-center gap-2">
+            <a
+              href="/resume.pdf?download=1"
+              download="Hasibul`s resume"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className="mt-5" text="Resume" />
+            </a>
+          </div>
+
+          {/* dropdown */}
+          <div className="dropdown lg:hidden navbar-end dropdown-bottom dropdown-end">
+            <div
+              tabIndex={0}
+              role="button"
+              className="lg:hidden bg-black/40 border-0 text-white shadow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabIndex={0}
+              className="menu menu-sm dropdown-content bg-gray-600/80 rounded-box z-1 mt-3 w-52 p-2 shadow text-[#d0f1f0ee]"
+            >
+              <div className="flex items-center justify-between mb-4">
+                <a
+                  href="/resume.pdf?download=1"
+                  download="Hasibul`s resume"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button className="mt-5" text="Resume" />
+                </a>
+              </div>
+              <div>{links}</div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default NavBar;

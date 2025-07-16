@@ -1,4 +1,60 @@
 [
+   {
+  "title": "Dorbazar: A e-commerce platform",
+  "id": "dorbazar-ecommerce-1",
+  "description": "A feature-rich multi-vendor marketplace with real-time reviews, Stripe payments, and role-based dashboards.",
+  "images": [
+    "https://i.ibb.co/RT7gFWyc/image.png",
+    "https://i.ibb.co/hFD8Cjr8/image.png",
+    "https://i.ibb.co/5WxVfHNq/image.png",
+    "https://i.ibb.co/fYL4Kbzc/image.png",
+    "https://i.ibb.co/tpYjnt5X/image.png",
+    "https://i.ibb.co/LXSvK3gH/image.png"
+  ],
+  "badge": ["React", "Firebase","Express.js","MongoDB","motion","leaflet-map", "emailjs", "stripe"],
+  "details": {
+    "about": "Dorbazar is a full-featured multi-role marketplace app built with React and Firebase. It supports secure user authentication, dynamic product listings, Stripe integration, and dashboard functionalities for admins, vendors, and buyers.",
+    "features": "Dorbazar provides full CRUD functionality for products with dynamic pricing, Stripe payments, user authentication via Firebase, and real-time one-per-user reviews. Admins can manage users, approve/reject products, and handle advertising requests. Vendors can add/edit products and track orders. Buyers can add to cart, select quantity, make payments, and manage their wishlist. The app supports protected routing, responsive design, rich animations using Lottie and Framer Motion, and data visualization via Recharts.",
+    "improvement": "Enhance order tracking, implement search filters across dashboard sections, and add real-time product stock management.",
+    "challenges": "Managing role-based access across protected routes and syncing product quantity with cart state during payment was complex and required deep state and conditional rendering logic.",
+    "packages": [
+      "react",
+      "vite",
+      "tailwindcss",
+      "daisyui",
+      "firebase",
+      "stripe-js",
+      "@stripe/react-stripe-js",
+      "react-router",
+      "react-hook-form",
+      "react-icons",
+      "sweetalert2",
+      "react-toastify",
+      "swiper",
+      "framer-motion",
+      "lottie-react",
+      "recharts",
+      "@tanstack/react-query",
+      "dotenv",
+      "@vitejs/plugin-react",
+      "eslint",
+      "@types/react",
+      "@types/react-dom",
+      "@eslint/js",
+      "eslint-plugin-react-hooks",
+      "eslint-plugin-react-refresh",
+      "globals"
+    ]
+  },
+  "liveLink": "https://dor-bazar.web.app/",
+  "repoLink": "https://github.com/web-hasib/Drobazar-client",
+  "bestFeatures": [
+    "Role-based Admin/Vendor/Buyer Dashboard",
+    "Stripe Payment with Quantity Selection",
+    "One-per-user Editable Review System"
+  ],
+  "creationDate": "2024-03-15"
+},
   {
     "title": "Virtual Bookshelf: Organize, Track & Explore Books",
     "id": "virtual-bookshelf-1",
@@ -100,34 +156,8 @@
       "Responsive Design with Modern UI"
     ],
     "creationDate": "2023-11-28"
-  },
-  {
-    "title": "AppStore: Discover & Review Apps",
-    "id": "app-store-3",
-    "description": "Discover, explore, and review apps across various categories with user authentication.",
-    "images": ["https://i.ibb.co/vC1mbBYy/image.png","https://i.ibb.co/B25bssgd/image.png","https://i.ibb.co/ZR3szHP6/image.png"],
-    "badge": ["React", "Firebase", "Tailwind CSS", "DaisyUI"],
-    "details": {
-      "about": "AppStore is a responsive platform to discover, explore, and review apps across Education, Gaming, and Productivity categories.",
-      "features": "AppStore allows users to browse, install, and review apps with secure Firebase Authentication. It supports user registration with validation rules, including strong password requirements. The app offers protected routes ensuring that app details and reviews are accessible only to authenticated users. Users can update their profile information, including name and profile picture. The UI is beautifully designed with Tailwind CSS, Zen UI, and Daisy UI for a smooth experience. Additional features include dynamic page titles with react-helmet, toast notifications with react-toastify, a 404 error page, and mobile-friendly responsive design for all devices.",
-      "improvement": "Integrate app rating system, enhance search filters, and add personalized app recommendations based on user behavior.",
-      "challenges": "Ensuring profile updates, form validation, and authentication security across protected routes required detailed attention and robust state management.",
-      "packages": [
-        "react-icons",
-        "react-helmet",
-        "react-router-dom",
-        "react-toastify",
-        "@zen-ui/react",
-        "daisyui"
-      ]
-    },
-    "liveLink": "https://app-store-d9019.web.app/",
-    "repoLink": "https://github.com/web-hasib/Assignment-9",
-    "bestFeatures": [
-      "Robust Firebase Authentication",
-      "Protected Routes for App Content",
-      "Fully Responsive & Attractive UI"
-    ],
-    "creationDate": "2024-01-07"
   }
+ 
+ 
+
 ]

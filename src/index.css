@@ -16,3 +16,11 @@
   color: rgba(161, 182, 187, 0.749);
   
 }
+
+/* index.css or global.css */
+/* @layer utilities {
+  .animate-spin-slow {
+    --angle: 0deg;
+    animation: spin 10s linear infinite;
+  }
+} */
